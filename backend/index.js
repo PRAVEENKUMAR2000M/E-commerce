@@ -13,7 +13,9 @@ import uploadRoutes from "./routes/uploadRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 
 dotenv.config();
+
 const port = process.env.PORT || 5000;
+console.log("JWT_SECRET", process.env.JWT_SECRET)
 
 connectDB();
 
